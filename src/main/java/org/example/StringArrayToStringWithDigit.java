@@ -3,6 +3,9 @@ package org.example;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
+/**
+ * Task3
+ */
 public class StringArrayToStringWithDigit {
     private final String[] inputStringsArray;
 
@@ -17,7 +20,6 @@ public class StringArrayToStringWithDigit {
                 .sorted() // sort array of Integer in natural order
                 .map(String::valueOf) // convert every Integer to string
                 .collect(Collectors.joining(", ")); // join string elements of stream with ", " delimiter
-
         return result; //return result string
     }
 

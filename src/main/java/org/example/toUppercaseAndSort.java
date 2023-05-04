@@ -3,6 +3,9 @@ package org.example;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Task2
+ */
 
 public class toUppercaseAndSort {
     private List<String> input;
