@@ -1,7 +1,7 @@
 package org.example;
 
-import java.awt.*;
 import java.util.List;
+import java.util.stream.Stream;
 
 
 public class Main {
@@ -24,6 +24,11 @@ public class Main {
                 .generate()
                 .limit(10)
                 .forEach(System.out::println);
+
+        //Task5
+        Stream<String> words = Stream.of("This guide teaches you how to work with Java 8 streams".split("\\s+"));
+        Stream<String> indexes = Stream.of("1","2","3","4","5","6","7","8");
+        (new StreamMixer()).mix(words,indexes).forEach(System.out::println);
 
     }
 }
